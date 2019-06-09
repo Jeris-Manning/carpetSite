@@ -1,0 +1,32 @@
+.DropShadow {
+  filter: drop-shadow(1px 1px 0 @gfShadowBlack);
+}
+
+.NavFont {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+}
+
+.SectionHeader {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+}
+
+.CustomBorder(@borderStyle, @borderColor, @top, @right, @bottom, @left) {
+  border: 1px @borderStyle @borderColor;
+  border-width: ~"@{top}px" ~"@{right}px" ~"@{bottom}px" ~"@{left}px";
+  
+}
+
+
+.CustomButton(@btnHeight, @radius, @bgColor, @textColor, @textSize) {
+  background: @bgColor;
+  height: @btnHeight;
+  border-radius: @radius;
+  color: @textColor;
+  font-size: @textSize;
+  
+}

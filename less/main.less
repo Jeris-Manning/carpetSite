@@ -1,0 +1,241 @@
+body {
+  background-color: @gfBlue;
+}
+
+section {
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.sectionImage {
+  // .DropShadow;
+  border: 2px solid @gfBlueDark;
+  border-radius: 12px;
+  max-width: 500px;
+  background-size: auto;
+  background-clip: padding-box;
+  background-repeat: no-repeat;
+  height: 401px;
+  width: 45%;
+  margin: 0 10px;
+  @media @media700 {
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+.sectionText {
+  max-width: 500px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  .CustomBorder(solid, @gfBlueDark, 0, 2, 0, 2);
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  @media @media700 {
+    border: solid @gfBlue3 5px;
+    // margin: 0 5%;
+  }
+
+  header {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    // margin-top: 5px;
+    // background-color: cornsilk;
+    // .CustomBorder(solid, @gfBlueDark, 2, 0, 0, 0);
+    .logo {
+      align-self: center;
+
+      img {
+        .DropShadow;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: @gfBlue3;
+      padding: 5px 0;
+      .CustomBorder(solid, @gfBlueDark, 2, 0, 2, 0);
+      a {
+        color: @gfGreen1;
+        .NavFont;
+        .DropShadow;
+        @media @media700 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .carpet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .sectionText {
+      //
+      width: 40%;
+      padding: 0 5%;
+      @media @media700 {
+        width: 90%;
+        padding: 5%;
+      }
+      h2 {
+        .SectionHeader;
+        margin: 10px 0;
+        text-align: center;
+        color: @gfBlue3;
+      }
+    }
+    .sectionImage {
+      //
+      //;
+      background-image: url(../source/carpet.jpg);
+      //
+
+      //
+    }
+  }
+  .hardWood {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    //
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .sectionText {
+      //
+      width: 40%;
+      padding: 0 5%;
+      @media @media700 {
+        width: 90%;
+        padding: 5%;
+      }
+      h2 {
+        .SectionHeader;
+        margin: 10px 0;
+        text-align: center;
+        color: @gfBlue3;
+      }
+    }
+    .sectionImage {
+      //
+      //;
+      background-image: url(../source/hardwood.jpg);
+      //
+      //
+    }
+  }
+  .tile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .sectionText {
+      //
+      width: 40%;
+      padding: 0 5%;
+      @media @media700 {
+        width: 90%;
+        padding: 5%;
+      }
+      h2 {
+        .SectionHeader;
+        margin: 10px 0;
+        text-align: center;
+        color: @gfBlue3;
+      }
+    }
+    .sectionImage {
+      //
+      //;
+      background-image: url(../source/tile.jpg);
+      //
+      //
+    }
+  }
+  .mattress {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    //
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .sectionText {
+      //
+      width: 40%;
+      padding: 0 5%;
+      @media @media700 {
+        width: 90%;
+        padding: 5%;
+      }
+      h2 {
+        .SectionHeader;
+        margin: 10px 0;
+        text-align: center;
+        color: @gfBlue3;
+      }
+    }
+    .sectionImage {
+      //
+      //;
+      background-image: url(../source/mattress.jpg);
+      //
+      //
+    }
+  }
+  .upholstery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .sectionText {
+      //
+      width: 40%;
+      padding: 0 5%;
+      @media @media700 {
+        width: 90%;
+        padding: 5%;
+      }
+      h2 {
+        .SectionHeader;
+        margin: 10px 0;
+        text-align: center;
+        color: @gfBlue3;
+      }
+    }
+    .sectionImage {
+      //
+      //;
+      background-image: url(../source/upholstery.jpg);
+      //
+      //
+    }
+  }
+}
