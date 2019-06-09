@@ -144,13 +144,49 @@ section {
   margin-top: 15px;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  section {
+    margin: 0;
+  }
+}
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+.cta {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #22ba0c;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.5));
+}
+@media (max-width: 840px) {
+  .cta {
+    font-size: 1.7rem;
+    padding: 5px;
+  }
+}
 .sectionImage {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   border: 2px solid #091929;
   border-radius: 12px;
   max-width: 500px;
-  background-size: auto;
+  background-size: cover;
   background-clip: padding-box;
   background-repeat: no-repeat;
+  background-position: right;
   height: 401px;
   width: 45%;
   margin: 0 10px;
@@ -158,7 +194,6 @@ section {
 @media (max-width: 700px) {
   .sectionImage {
     width: 90%;
-    padding: 5%;
   }
 }
 .sectionText {
@@ -166,27 +201,45 @@ section {
 }
 .container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto 40px;
   border: 1px solid #091929;
-  border-width: 0px 2px 0px 2px;
+  border-width: 2px 2px 2px 2px;
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background-clip: border-box;
 }
 @media (max-width: 700px) {
   .container {
-    border: solid #1a4572 5px;
+    margin: 15px 10px;
   }
 }
 .container header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 248, 220, 0.6) !important;
+  background-image: url(../source/carpetBackground.jpg);
+  background-blend-mode: color;
+  border-radius: 10px 10px 0 0;
 }
 .container header .logo {
   align-self: center;
 }
 .container header .logo img {
   filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.5));
+}
+.container header .logo h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.7rem;
+  color: #1a4572;
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: -30px;
 }
 .container header nav {
   display: flex;
@@ -196,6 +249,11 @@ section {
   padding: 5px 0;
   border: 1px solid #091929;
   border-width: 2px 0px 2px 0px;
+}
+@media (max-width: 700px) {
+  .container header nav {
+    border: none;
+  }
 }
 .container header nav a {
   color: #afe99e;
@@ -209,61 +267,50 @@ section {
     font-size: 1rem;
   }
 }
-.container .carpet {
+.container #carpet {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media (max-width: 700px) {
-  .container .carpet {
-    flex-direction: column;
-    align-content: center;
-  }
-}
-.container .carpet .sectionText {
+.container #carpet .sectionText {
   width: 40%;
   padding: 0 5%;
 }
 @media (max-width: 700px) {
-  .container .carpet .sectionText {
+  .container #carpet .sectionText {
     width: 90%;
     padding: 5%;
   }
 }
-.container .carpet .sectionText h2 {
+.container #carpet .sectionText h2 {
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Barlow Condensed', sans-serif;
   font-style: italic;
-  margin: 10px 0;
+  margin: 0 0 10px;
   text-align: center;
   color: #1a4572;
 }
-.container .carpet .sectionImage {
+.container #carpet .sectionImage {
+  background-position: left;
   background-image: url(../source/carpet.jpg);
 }
-.container .hardWood {
+.container #hardWood {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
-@media (max-width: 700px) {
-  .container .hardWood {
-    flex-direction: column;
-    align-content: center;
-  }
-}
-.container .hardWood .sectionText {
+.container #hardWood .sectionText {
   width: 40%;
   padding: 0 5%;
 }
 @media (max-width: 700px) {
-  .container .hardWood .sectionText {
+  .container #hardWood .sectionText {
     width: 90%;
     padding: 5%;
   }
 }
-.container .hardWood .sectionText h2 {
+.container #hardWood .sectionText h2 {
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Barlow Condensed', sans-serif;
@@ -272,31 +319,25 @@ section {
   text-align: center;
   color: #1a4572;
 }
-.container .hardWood .sectionImage {
+.container #hardWood .sectionImage {
   background-image: url(../source/hardwood.jpg);
 }
-.container .tile {
+.container #tile {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-@media (max-width: 700px) {
-  .container .tile {
-    flex-direction: column;
-    align-content: center;
-  }
-}
-.container .tile .sectionText {
+.container #tile .sectionText {
   width: 40%;
   padding: 0 5%;
 }
 @media (max-width: 700px) {
-  .container .tile .sectionText {
+  .container #tile .sectionText {
     width: 90%;
     padding: 5%;
   }
 }
-.container .tile .sectionText h2 {
+.container #tile .sectionText h2 {
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Barlow Condensed', sans-serif;
@@ -305,31 +346,25 @@ section {
   text-align: center;
   color: #1a4572;
 }
-.container .tile .sectionImage {
+.container #tile .sectionImage {
   background-image: url(../source/tile.jpg);
 }
-.container .mattress {
+.container #mattress {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
-@media (max-width: 700px) {
-  .container .mattress {
-    flex-direction: column;
-    align-content: center;
-  }
-}
-.container .mattress .sectionText {
+.container #mattress .sectionText {
   width: 40%;
   padding: 0 5%;
 }
 @media (max-width: 700px) {
-  .container .mattress .sectionText {
+  .container #mattress .sectionText {
     width: 90%;
     padding: 5%;
   }
 }
-.container .mattress .sectionText h2 {
+.container #mattress .sectionText h2 {
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Barlow Condensed', sans-serif;
@@ -338,31 +373,26 @@ section {
   text-align: center;
   color: #1a4572;
 }
-.container .mattress .sectionImage {
+.container #mattress .sectionImage {
   background-image: url(../source/mattress.jpg);
 }
-.container .upholstery {
+.container #upholstery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
-@media (max-width: 700px) {
-  .container .upholstery {
-    flex-direction: column;
-    align-content: center;
-  }
-}
-.container .upholstery .sectionText {
+.container #upholstery .sectionText {
   width: 40%;
   padding: 0 5%;
 }
 @media (max-width: 700px) {
-  .container .upholstery .sectionText {
+  .container #upholstery .sectionText {
     width: 90%;
     padding: 5%;
   }
 }
-.container .upholstery .sectionText h2 {
+.container #upholstery .sectionText h2 {
   font-size: 2rem;
   font-weight: 700;
   font-family: 'Barlow Condensed', sans-serif;
@@ -371,6 +401,6 @@ section {
   text-align: center;
   color: #1a4572;
 }
-.container .upholstery .sectionImage {
+.container #upholstery .sectionImage {
   background-image: url(../source/upholstery.jpg);
 }

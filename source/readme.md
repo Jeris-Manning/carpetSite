@@ -1,6 +1,8 @@
 #4D69C6
 GRADUAL
 
+less-watch-compiler less css index.less
+
 AADGLRU
 
 #F8A7BA

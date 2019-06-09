@@ -5,22 +5,55 @@ body {
 section {
   margin-top: 15px;
   justify-content: center;
+  @media @media700 {
+    margin: 0;
+  }
+}
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  padding-top: 10px;
 }
 
+.cta {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Barlow Condensed', sans-serif;
+
+  text-align: center;
+
+  margin-top: 20px;
+  background-color: #22ba0c;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  .DropShadow;
+  @media (max-width: 840px) {
+    font-size: 1.7rem;
+    padding: 5px;
+  }
+}
 .sectionImage {
-  // .DropShadow;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   border: 2px solid @gfBlueDark;
   border-radius: 12px;
   max-width: 500px;
-  background-size: auto;
+  background-size: cover;
   background-clip: padding-box;
   background-repeat: no-repeat;
+  background-position: right;
   height: 401px;
   width: 45%;
   margin: 0 10px;
+
   @media @media700 {
     width: 90%;
-    padding: 5%;
   }
 }
 
@@ -30,28 +63,42 @@ section {
 
 .container {
   max-width: 1000px;
-  margin: 0 auto;
-  .CustomBorder(solid, @gfBlueDark, 0, 2, 0, 2);
+  margin: 20px auto 40px;
+  .CustomBorder(solid, @gfBlueDark, 2, 2, 2, 2);
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  background-clip: border-box;
+
   @media @media700 {
-    border: solid @gfBlue3 5px;
-    // margin: 0 5%;
+    margin: 15px 10px;
   }
 
   header {
-    // width: 100%;
     display: flex;
     flex-direction: column;
-    // margin-top: 5px;
-    // background-color: cornsilk;
-    // .CustomBorder(solid, @gfBlueDark, 2, 0, 0, 0);
+    justify-content: center;
+    background-color: rgba(255, 248, 220, 0.6) !important;
+    background-image: url(../source/carpetBackground.jpg);
+    background-blend-mode: color;
+    border-radius: 10px 10px 0 0;
+
     .logo {
       align-self: center;
 
       img {
         .DropShadow;
+      }
+      h2 {
+        .NavFont;
+
+        font-size: 1.7rem;
+        color: @gfBlue3;
+        font-weight: 900;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: -30px;
       }
     }
     nav {
@@ -60,7 +107,11 @@ section {
       justify-content: space-around;
       background-color: @gfBlue3;
       padding: 5px 0;
+
       .CustomBorder(solid, @gfBlueDark, 2, 0, 2, 0);
+      @media @media700 {
+        border: none;
+      }
       a {
         color: @gfGreen1;
         .NavFont;
@@ -72,18 +123,12 @@ section {
     }
   }
 
-  .carpet {
+  #carpet {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //
-    @media @media700 {
-      flex-direction: column;
-      align-content: center;
-    }
 
     .sectionText {
-      //
       width: 40%;
       padding: 0 5%;
       @media @media700 {
@@ -92,32 +137,22 @@ section {
       }
       h2 {
         .SectionHeader;
-        margin: 10px 0;
+        margin: 0 0 10px;
         text-align: center;
         color: @gfBlue3;
       }
     }
     .sectionImage {
-      //
-      //;
+      background-position: left;
       background-image: url(../source/carpet.jpg);
-      //
-
-      //
     }
   }
-  .hardWood {
+  #hardWood {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    //
-    @media @media700 {
-      flex-direction: column;
-      align-content: center;
-    }
 
     .sectionText {
-      //
       width: 40%;
       padding: 0 5%;
       @media @media700 {
@@ -132,25 +167,15 @@ section {
       }
     }
     .sectionImage {
-      //
-      //;
       background-image: url(../source/hardwood.jpg);
-      //
-      //
     }
   }
-  .tile {
+  #tile {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //
-    @media @media700 {
-      flex-direction: column;
-      align-content: center;
-    }
 
     .sectionText {
-      //
       width: 40%;
       padding: 0 5%;
       @media @media700 {
@@ -165,25 +190,15 @@ section {
       }
     }
     .sectionImage {
-      //
-      //;
       background-image: url(../source/tile.jpg);
-      //
-      //
     }
   }
-  .mattress {
+  #mattress {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    //
-    @media @media700 {
-      flex-direction: column;
-      align-content: center;
-    }
 
     .sectionText {
-      //
       width: 40%;
       padding: 0 5%;
       @media @media700 {
@@ -198,25 +213,16 @@ section {
       }
     }
     .sectionImage {
-      //
-      //;
       background-image: url(../source/mattress.jpg);
-      //
-      //
     }
   }
-  .upholstery {
+  #upholstery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    //
-    @media @media700 {
-      flex-direction: column;
-      align-content: center;
-    }
+    margin-bottom: 15px;
 
     .sectionText {
-      //
       width: 40%;
       padding: 0 5%;
       @media @media700 {
@@ -231,11 +237,7 @@ section {
       }
     }
     .sectionImage {
-      //
-      //;
       background-image: url(../source/upholstery.jpg);
-      //
-      //
     }
   }
 }

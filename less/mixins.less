@@ -17,16 +17,7 @@
 
 .CustomBorder(@borderStyle, @borderColor, @top, @right, @bottom, @left) {
   border: 1px @borderStyle @borderColor;
-  border-width: ~"@{top}px" ~"@{right}px" ~"@{bottom}px" ~"@{left}px";
-  
+  border-width: ~'@{top}px' ~'@{right}px' ~'@{bottom}px' ~'@{left}px';
 }
 
 
-.CustomButton(@btnHeight, @radius, @bgColor, @textColor, @textSize) {
-  background: @bgColor;
-  height: @btnHeight;
-  border-radius: @radius;
-  color: @textColor;
-  font-size: @textSize;
-  
-}
